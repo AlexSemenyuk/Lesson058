@@ -1,0 +1,70 @@
+/* Common */
+:root {
+  /* text color */
+  --color-text-primary: rgba(0, 0, 0, 1);
+  --color-text-secondary: rgb(255, 255, 255);
+
+  /* background */
+  --color-background-body: rgb(172, 215, 231, 1);
+  --color-background-item: rgb(245, 245, 245, 1);
+
+  /* text */
+  --text-primary: "Arial", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background-body);
+  /* border: 1px solid var(--color-text-primary); */
+  font-family: var(--text-primary);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  margin-right: 2%;
+}
+
+section {
+  background-color: var(--color-background-body);
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  column-gap: 3.5%;
+}
+
+.col {
+  background-color: var(--color-background-body);
+  display: flex;
+  flex-direction: column;
+}
+
+item {
+  flex-basis: 100%;
+  justify-content: flex-start;
+  background-color: var(--color-background-item);
+}
+
+.item:nth-of-type(n + 2) {
+  margin-top: 7%;
+}
+
+h3 {
+  background-color: var(--color-background-item);
+  padding: 1.25em 1.25em 0 1.25em;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  top: -2%;
+}
+
+p {
+  background-color: var(--color-background-item);
+  padding: 1.4em;
+  position: relative;
+  top: -2%;
+}

@@ -1,0 +1,113 @@
+/* Common */
+:root {
+  /* text color */
+  --color-text-primary: rgba(0, 0, 0, 1);
+  --color-text-secondary: rgb(170, 170, 170);
+
+  /* background */
+  --color-background-body: rgb(245, 245, 245, 1);
+  --color-background-ann: rgb(255, 181, 194, 1);
+  --color-background-jack: rgb(173, 216, 232, 1);
+  /* text */
+  --text-primary: "Arial", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background-body);
+  /* border: 1px solid var(--color-text-primary); */
+  font-family: var(--text-primary);
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  padding: 40px 0 40px 0;
+}
+
+.sms {
+  display: grid;
+  grid-template-columns: 27% 43% 27%;
+  column-gap: 2.5%;
+  align-items: center;
+}
+
+.two {
+  margin-top: 10px;
+}
+
+.one:nth-last-of-type(n + 2) {
+  margin-top: 10px;
+}
+
+.att {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.one > .att {
+  justify-content: flex-end;
+}
+
+.two > .att {
+  justify-content: flex-start;
+}
+
+.ann {
+  min-width: 100px;
+}
+
+.ann-img {
+  text-align: center;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+.ann > h2 {
+  text-align: right;
+}
+
+.jack > h2 {
+  text-align: left;
+}
+
+.time {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+.ann > .time {
+  text-align: right;
+}
+
+.jack > .time {
+  text-align: left;
+}
+
+.text {
+  font-size: 14px;
+  padding: 25px;
+}
+
+.one > .text {
+  background-color: var(--color-background-ann);
+  border-radius: 20px 20px 20px 0;
+}
+
+.two > .text {
+  background-color: var(--color-background-jack);
+  border-radius: 20px 20px 0 20px;
+}
+
+img {
+  /* width: 23%; */
+  max-width: 60px;
+  min-width: 40px;
+}
